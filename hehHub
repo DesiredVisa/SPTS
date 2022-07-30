@@ -28,8 +28,8 @@ local T2 = Main:NewTab("Farm Scripts")
 local S2 = T2: NewSection("Farm Scripts/GUI's")
 local T3 = Main:NewTab("Other Scripts")
 local S3 = T3: NewSection("Other Scripts")
-local T4 = Main:NewTab("TP To My Cutie")
-local S4 = T4: NewSection("TP To Cutie")
+local T4 = Main:NewTab("TP to My Cutie")
+local S4 = T4: NewSection("TP to My Cutie")
 
 
 S1:NewKeybind(" ON/OFF", "", Enum.KeyCode.P, function()
@@ -256,7 +256,7 @@ end)
 
 S4:NewToggle("TP To Nick", "Info", function(state)
     da = state
-    if da then
+    while da do
         task.wait(0.2)
         pcall (function()
             local p1 = game.Players.LocalPlayer.Character.HumanoidRootPart
@@ -268,7 +268,7 @@ end)
 
 S4:NewToggle("TP To Andrew", "Info", function(state)
     da = state
-    if da then
+    while da do
         task.wait(0.2)
         pcall (function()
             local p1 = game.Players.LocalPlayer.Character.HumanoidRootPart
