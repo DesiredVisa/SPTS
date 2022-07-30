@@ -257,7 +257,7 @@ end)
 S4:NewToggle("TP To Nick", "Info", function(state)
     da = state
     while da do
-        task.wait(0.2)
+        task.wait(0.05)
         pcall (function()
             local p1 = game.Players.LocalPlayer.Character.HumanoidRootPart
             local p2 = "vHxpnotixx"
@@ -269,7 +269,7 @@ end)
 S4:NewToggle("TP To Andrew", "Info", function(state)
     da = state
     while da do
-        task.wait(0.2)
+        task.wait(0.05)
         pcall (function()
             local p1 = game.Players.LocalPlayer.Character.HumanoidRootPart
             local p2 = "DesiredVisa"
