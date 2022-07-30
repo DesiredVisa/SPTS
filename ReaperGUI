@@ -40,18 +40,6 @@ local Stack2 = Instance.new("TextButton")
 local OpenLocal_2 = Instance.new("TextButton")
 local Open = Instance.new("TextButton")
 
-local Imput = game:GetService("UserInputService")
-Imput.InputBegan:connect(function(inst)
-	if inst.KeyCode == Enum.KeyCode.F2 then
-		game.ReplicatedStorage.RemoteEvent:FireServer({"Respawn"})
-		Wait(1.7)
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(319,249,842)
-	end
-	if repscript.BackgroundColor3 == Color3.fromRGB(65, 255, 8) then
-		game.Players.LocalPlayer.Character.Head.NameBbGui.NameTxt: Destroy()
-	end
-end)
-
 if game.PlaceId ~= 2202352383 then
 	return
 end
