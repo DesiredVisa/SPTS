@@ -28,8 +28,8 @@ local T2 = Main:NewTab("Farm Scripts")
 local S2 = T2: NewSection("Farm Scripts/GUI's")
 local T3 = Main:NewTab("Other Scripts")
 local S3 = T3: NewSection("Other Scripts")
-local T4 = Main:NewTab("TP to My Cutie")
-local S4 = T4: NewSection("TP to My Cutie")
+local T4 = Main:NewTab("Teleport")
+local S4 = T4: NewSection("Teleport")
 
 
 S1:NewKeybind(" ON/OFF", "", Enum.KeyCode.P, function()
@@ -254,7 +254,7 @@ S3:NewToggle("Get Purple Aura (Respawn)", "Info", function(state)
 end)
 
 
-S4:NewToggle("TP To Nick", "Info", function(state)
+S4:NewToggle("TP to Nick", "Info", function(state)
     da = state
     while da do
         task.wait(0.05)
@@ -266,7 +266,8 @@ S4:NewToggle("TP To Nick", "Info", function(state)
     end
 end)
 
-S4:NewToggle("TP To Andrew", "Info", function(state)
+
+S4:NewToggle("TP to Andrew", "Info", function(state)
     da = state
     while da do
         task.wait(0.05)
@@ -274,6 +275,17 @@ S4:NewToggle("TP To Andrew", "Info", function(state)
             local p1 = game.Players.LocalPlayer.Character.HumanoidRootPart
             local p2 = "DesiredVisa"
             p1.CFrame = game:GetService("Players")[p2].Character.HumanoidRootPart.CFrame
+        end)
+    end
+end)
+
+
+S4:NewToggle("TP to Spawn", "Info", function(state)
+    da = state
+    while da do
+        task.wait(0.05)
+        pcall (function()
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(319,250, 864)
         end)
     end
 end)
