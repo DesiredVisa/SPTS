@@ -1,0 +1,7 @@
+game:GetService("Workspace").DesiredVisa.UpperTorso.Aura1: Destroy()
+game:GetService("Workspace").DesiredVisa.UpperTorso.Aura2: Destroy()
+game:GetService("Workspace").DesiredVisa.LeftHand.Aura2: Destroy()
+game:GetService("Workspace").DesiredVisa.LeftHand.Aura3: Destroy()
+game:GetService("Workspace").DesiredVisa.RightHand.Aura2: Destroy()
+game:GetService("Workspace").DesiredVisa.RightHand.Aura3: Destroy()
+game:GetService("Workspace").DesiredVisa.RightUpperLeg.Aura1: Destroy()
