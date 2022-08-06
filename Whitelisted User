@@ -1,1 +1,60 @@
+
+--whitelist--
+if game.Players.LocalPlayer.userId == 679164989 or game.Players.LocalPlayer.userId == 158325526 or game.Players.LocalPlayer.userId == 208192226 or game.Players.LocalPlayer.userId ==  400610816
+then
+-- friend list
+print([[
+___________________________________
+ 
+Whitelist system
+Build 0001
 DesiredVisa
+Discoverest
+Creeper_PvPKing31
+___________________________________
+]])
+ 
+function checkfriendlist(model)
+local friend = true
+local target = nil
+if model.ClassName == "Player" then
+target = model
+else
+target = game:GetService("Players"):GetPlayerFromCharacter(model)
+end
+if target ~= nil then
+if target:IsFriendsWith(1035634591) then friend = true end
+end
+return friend
+end
+ 
+if checkfriendlist(game:GetService("Players").LocalPlayer) == false and not game:GetService("Players").LocalPlayer:FindFirstChild("Kyu's Temp Really blacklist") then
+warn("You're not whitelisted")
+--wait(1)
+--error("Script has been stopped.")
+end
+ 
+warn("You're whitelisted, "..game:GetService("Players").LocalPlayer.Name.." :)")
+ 
+else
+while true do
+wait()
+local blind = Instance.new('ScreenGui')
+local user = game.Players.LocalPlayer
+blind.Parent = user.PlayerGui
+local scr = Instance.new('TextLabel')
+scr.Parent = blind
+scr.Text = " "..game.Players.LocalPlayer.Name.." has been a bad boy. "
+scr.TextScaled = true
+scr.Font = Enum.Font.Arial
+scr.TextColor = BrickColor.new(1001)
+scr.BackgroundColor3 = Color3.new(0.235294, 0.235294, 0.235294)
+scr.BorderColor3 = Color3.new(0, 0, 0)
+scr.Position = UDim2.new(0, 0, 0, 0)
+scr.Size = UDim2.new(1, 1, 1, 1)
+wait(5)
+game.Players.LocalPlayer:Kick("Why?")
+end
+end
+ 
+--whitelist--
