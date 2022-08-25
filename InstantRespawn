@@ -1,0 +1,15 @@
+_G.Toggle = true
+    while _G.Toggle do
+        local args = {
+            [1] = {
+                [1] = "Respawn"
+            }
+        }
+        wait(0.2)
+        game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+        for i, v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+            if v.Name == "ForceField" then
+                v:Destroy()
+            end
+        end
+    end
