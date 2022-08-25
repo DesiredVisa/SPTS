@@ -1,0 +1,9 @@
+while true do
+task.wait(0)
+for _, snowball in pairs(game.Workspace.Storage:GetChildren()) do
+    if snowball.Name == "EnergySphere9" then
+      snowball.Transparency = 0
+      snowball.Color = Color3.fromRGB(0,0,0)
+    end
+    end
+end
