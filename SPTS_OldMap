@@ -1,0 +1,44 @@
+if not game:IsLoaded() then
+    game.Loaded:Wait()
+end
+if game.PlaceId == 2202352383 then
+    for i, v in pairs(workspace.Main.Waterfall:GetDescendants()) do
+        if v:IsA("Part") or v:IsA("Mesh") or v:IsA("BasePart") then
+            if v.Color == Color3.fromRGB(15, 145, 230) or v.Transparency == 0.5 or v.Color == Color3.fromRGB(17, 17, 17) then
+                v.Color = Color3.fromRGB(15, 145, 230)
+            
+            end
+            if v.ClassName == "UnionOperation" then v.UsePartColor = true end
+        end
+    end
+    for i, v in pairs(workspace.Main.Waterfall:GetChildren()) do
+        if v.Name == "Waterfall" then
+            v:Destroy()
+        end
+    end
+    workspace.Terrain.WaterColor = Color3.fromRGB(30, 156, 237)
+    workspace.Terrain.WaterTransparency = 4
+    workspace.Terrain.WaterReflectance = 1
+    for i, v in pairs(workspace.Main.OceanFloor:GetChildren()) do
+        v.Color = Color3.fromRGB(176, 146, 98)
+    end
+    for i, v in pairs(workspace.Main.WaterWalkFloor:GetChildren()) do
+        v.Color = Color3.fromRGB(176, 146, 98)
+    end
+    for s, a in pairs({1, 2, 3}) do
+        for i, v in pairs(workspace.Town.Color["Tree"..s].Leaf:GetChildren()) do
+            v.Color = Color3.fromRGB(s*148, s*170, s*145)
+        end
+        for i, v in pairs(workspace.Town.Color["Tree"..s].Trunk:GetChildren()) do
+            v.Color = Color3.fromRGB(105, 70, 0)
+        end
+    end
+    for i, v in pairs(workspace.Town.Color.Floor:GetChildren()) do
+        v.Color = Color3.fromRGB(109, 145, 81)
+    end
+    for i, v in pairs(workspace.Town.Core:GetDescendants()) do
+        if v:IsA("SpotLight") then
+            v.Color = Color3.fromRGB(120, 0, 255)
+        end
+    end
+end
