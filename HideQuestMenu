@@ -1,0 +1,8 @@
+if not game:IsLoaded() then
+    game.Loaded:Wait()
+end
+
+if game.PlaceId ~= 2202352383 then return end
+if game:GetService("Players").DesiredVisa.PlayerGui.ScreenGui.MainQuestFrame then
+    game:GetService("Players").DesiredVisa.PlayerGui.ScreenGui.MainQuestFrame.Visible = false
+end
