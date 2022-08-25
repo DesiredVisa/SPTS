@@ -1,0 +1,9 @@
+while true do
+task.wait(0)
+for _, bullet in pairs(game.Workspace:GetChildren()) do
+    if bullet.Name == "Part" then
+       bullet.Transparency = 0
+       bullet.Color = Color3.fromRGB(33, 33, 33)
+    end
+    end
+end
