@@ -27,6 +27,8 @@ game:GetService("CoreGui").MainGUI.MainFrame.ExtrasFrame.BackgroundTransparency 
 
 --AnimationFix
 
+local cmdp = game:GetService("Players")
+local cmdlp = cmdp.LocalPlayer
 local Char = cmdlp.Character
 for i,v in pairs(game:GetService("Players").LocalPlayer.Character.Humanoid:GetPlayingAnimationTracks()) do
 	v:Stop()
@@ -73,6 +75,8 @@ game:GetService("CoreGui").MainGUI.MainFrame.ExtrasFrame.BackgroundTransparency 
 
 --AnimationFix
 
+local cmdp = game:GetService("Players")
+local cmdlp = cmdp.LocalPlayer
 local Char = cmdlp.Character
 for i,v in pairs(game:GetService("Players").LocalPlayer.Character.Humanoid:GetPlayingAnimationTracks()) do
 	v:Stop()
