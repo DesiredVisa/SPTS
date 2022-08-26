@@ -24,6 +24,7 @@ game:GetService("CoreGui").MainGUI.MainFrame.ExtrasFrame.farmbtsafety.Visible = 
 game:GetService("CoreGui").MainGUI.MainFrame.ExtrasFrame.farmbtsafetyText1.Visible = false
 game:GetService("CoreGui").MainGUI.MainFrame.ExtrasFrame.ReJoinServer.Visible = false
 game:GetService("CoreGui").MainGUI.MainFrame.ExtrasFrame.BackgroundTransparency = 1
+game:GetService("CoreGui").PsychicSpam.MainFrame.Position = UDim2.new(0,0, 0,925)
 
 --AnimationFix
 
@@ -72,6 +73,7 @@ game:GetService("CoreGui").MainGUI.MainFrame.ExtrasFrame.farmbtsafety.Visible = 
 game:GetService("CoreGui").MainGUI.MainFrame.ExtrasFrame.farmbtsafetyText1.Visible = false
 game:GetService("CoreGui").MainGUI.MainFrame.ExtrasFrame.ReJoinServer.Visible = false
 game:GetService("CoreGui").MainGUI.MainFrame.ExtrasFrame.BackgroundTransparency = 1
+game:GetService("CoreGui").PsychicSpam.MainFrame.Position = UDim2.new(0,0, 0,925)
 
 --AnimationFix
 
