@@ -1,0 +1,13 @@
+local cmdp = game:GetService("Players")
+local cmdlp = cmdp.LocalPlayer
+local Char = cmdlp.Character
+for i,v in pairs(game:GetService("Players").LocalPlayer.Character.Humanoid:GetPlayingAnimationTracks()) do
+	v:Stop()
+end
+Char.Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616139451"
+Char.Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616134815"
+Char.Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616140816"
+Char.Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=742637544"
+Char.Animate.idle.Animation1.Weight.Value = "9"
+Char.Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=742637544"
+Char.Animate.idle.Animation2.Weight.Value = "1"
