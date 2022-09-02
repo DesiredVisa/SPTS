@@ -26,10 +26,6 @@ game:GetService("CoreGui").MainGUI.MainFrame.ExtrasFrame.ReJoinServer.Visible = 
 game:GetService("CoreGui").MainGUI.MainFrame.ExtrasFrame.BackgroundTransparency = 1
 game:GetService("CoreGui").PsychicSpam.MainFrame.Position = UDim2.new(0,0, 0,925)
 
---AnimationFix
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/DesiredVisa/SPTS/main/AnimationFixer", true))()
-
 while (true) do
     wait(0.2)
 for _,v in pairs(game:GetService("Players").LocalPlayer.Character:GetChildren()) do
@@ -62,10 +58,6 @@ game:GetService("CoreGui").MainGUI.MainFrame.ExtrasFrame.farmbtsafetyText1.Visib
 game:GetService("CoreGui").MainGUI.MainFrame.ExtrasFrame.ReJoinServer.Visible = false
 game:GetService("CoreGui").MainGUI.MainFrame.ExtrasFrame.BackgroundTransparency = 1
 game:GetService("CoreGui").PsychicSpam.MainFrame.Position = UDim2.new(0,0, 0,925)
-
---AnimationFix
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/DesiredVisa/SPTS/main/AnimationFixer", true))()
 
 end
 end
