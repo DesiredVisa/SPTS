@@ -6,24 +6,6 @@ game:GetService("CoreGui").MainGUI.MainFrame.Position = UDim2.new(0,-400, 0,-31)
 game:GetService("CoreGui").MainGUI.cf.Visible = false
 game:GetService("CoreGui").MainGUI.MainFrame.Close.Visible = false
 game:GetService("CoreGui").MainGUI.MainFrame.Minimize.Visible = false
-game:GetService("CoreGui").MainGUI.MainFrame.WayPoints.Visible = false
-game:GetService("CoreGui").MainGUI.MainFrame.WayPointsFrame.Visible = false
-game:GetService("CoreGui").MainGUI.MainFrame.FarmExp.Visible = false
-game:GetService("CoreGui").MainGUI.MainFrame.FarmExpFrame.Visible = false
-game:GetService("CoreGui").MainGUI.MainFrame.DeathReturn.Visible = false
-game:GetService("CoreGui").MainGUI.MainFrame.esptrack.Visible = false
-game:GetService("CoreGui").MainGUI.MainFrame.PlayerInfo.Visible = false
-game:GetService("CoreGui").MainGUI.MainFrame.PlayerInfoFrame.Visible = false
-game:GetService("CoreGui").MainGUI.MainFrame.BackgroundTransparency = 1
-game:GetService("CoreGui").MainGUI.MainFrame.ExtrasFrame.PanicToggleLabel.Visible = false
-game:GetService("CoreGui").MainGUI.MainFrame.ExtrasFrame.PanicToggle.Visible = false
-game:GetService("CoreGui").MainGUI.MainFrame.ExtrasFrame.NoClip.Visible = false
-game:GetService("CoreGui").MainGUI.MainFrame.ExtrasFrame.farmbtsafetylabel.Visible = false
-game:GetService("CoreGui").MainGUI.MainFrame.ExtrasFrame.farmbtsafetylevel.Visible = false
-game:GetService("CoreGui").MainGUI.MainFrame.ExtrasFrame.farmbtsafety.Visible = false
-game:GetService("CoreGui").MainGUI.MainFrame.ExtrasFrame.farmbtsafetyText1.Visible = false
-game:GetService("CoreGui").MainGUI.MainFrame.ExtrasFrame.ReJoinServer.Visible = false
-game:GetService("CoreGui").MainGUI.MainFrame.ExtrasFrame.BackgroundTransparency = 1
 
 while (true) do
     wait(0.2)
@@ -38,24 +20,6 @@ game:GetService("CoreGui").MainGUI.MainFrame.Position = UDim2.new(0,-400, 0,-31)
 game:GetService("CoreGui").MainGUI.cf.Visible = false
 game:GetService("CoreGui").MainGUI.MainFrame.Close.Visible = false
 game:GetService("CoreGui").MainGUI.MainFrame.Minimize.Visible = false
-game:GetService("CoreGui").MainGUI.MainFrame.WayPoints.Visible = false
-game:GetService("CoreGui").MainGUI.MainFrame.WayPointsFrame.Visible = false
-game:GetService("CoreGui").MainGUI.MainFrame.FarmExp.Visible = false
-game:GetService("CoreGui").MainGUI.MainFrame.FarmExpFrame.Visible = false
-game:GetService("CoreGui").MainGUI.MainFrame.DeathReturn.Visible = false
-game:GetService("CoreGui").MainGUI.MainFrame.esptrack.Visible = false
-game:GetService("CoreGui").MainGUI.MainFrame.PlayerInfo.Visible = false
-game:GetService("CoreGui").MainGUI.MainFrame.PlayerInfoFrame.Visible = false
-game:GetService("CoreGui").MainGUI.MainFrame.BackgroundTransparency = 1
-game:GetService("CoreGui").MainGUI.MainFrame.ExtrasFrame.PanicToggleLabel.Visible = false
-game:GetService("CoreGui").MainGUI.MainFrame.ExtrasFrame.PanicToggle.Visible = false
-game:GetService("CoreGui").MainGUI.MainFrame.ExtrasFrame.NoClip.Visible = false
-game:GetService("CoreGui").MainGUI.MainFrame.ExtrasFrame.farmbtsafetylabel.Visible = false
-game:GetService("CoreGui").MainGUI.MainFrame.ExtrasFrame.farmbtsafetylevel.Visible = false
-game:GetService("CoreGui").MainGUI.MainFrame.ExtrasFrame.farmbtsafety.Visible = false
-game:GetService("CoreGui").MainGUI.MainFrame.ExtrasFrame.farmbtsafetyText1.Visible = false
-game:GetService("CoreGui").MainGUI.MainFrame.ExtrasFrame.ReJoinServer.Visible = false
-game:GetService("CoreGui").MainGUI.MainFrame.ExtrasFrame.BackgroundTransparency = 1
 
 end
 end
