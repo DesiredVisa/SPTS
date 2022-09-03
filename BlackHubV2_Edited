@@ -2,10 +2,11 @@ loadstring(game:HttpGet("https://pastebin.com/raw/CLgw8MSe", true))()
 game:GetService("CoreGui").MainGUI.StatsFrame.Position = UDim2.new(0, 375, 0,925)
 game:GetService("CoreGui").MainGUI.StatsFrame.StatName.TextColor3 = Color3.fromRGB(255,255,255)
 game:GetService("CoreGui").MainGUI.StatsFrame.BackgroundColor3 = Color3.fromRGB(33,33,33)
-game:GetService("CoreGui").MainGUI.MainFrame.Position = UDim2.new(0,-400, 0,-31)
+game:GetService("CoreGui").MainGUI.MainFrame.Position = UDim2.new(0,50, 0,-31)
 game:GetService("CoreGui").MainGUI.cf.Visible = false
 game:GetService("CoreGui").MainGUI.MainFrame.Close.Visible = false
 game:GetService("CoreGui").MainGUI.MainFrame.Minimize.Visible = false
+game:GetService("CoreGui").MainGUI.MainFrame.Size = UDim2.new(0, 0, 0, 0)
 
 while (true) do
     wait(0.2)
@@ -16,11 +17,11 @@ loadstring(game:HttpGet("https://pastebin.com/raw/CLgw8MSe", true))()
 game:GetService("CoreGui").MainGUI.StatsFrame.Position = UDim2.new(0, 375, 0,925)
 game:GetService("CoreGui").MainGUI.StatsFrame.StatName.TextColor3 = Color3.fromRGB(255,255,255)
 game:GetService("CoreGui").MainGUI.StatsFrame.BackgroundColor3 = Color3.fromRGB(33,33,33)
-game:GetService("CoreGui").MainGUI.MainFrame.Position = UDim2.new(0,-400, 0,-31)
+game:GetService("CoreGui").MainGUI.MainFrame.Position = UDim2.new(0,50, 0,-31)
 game:GetService("CoreGui").MainGUI.cf.Visible = false
 game:GetService("CoreGui").MainGUI.MainFrame.Close.Visible = false
 game:GetService("CoreGui").MainGUI.MainFrame.Minimize.Visible = false
-
+game:GetService("CoreGui").MainGUI.MainFrame.Size = UDim2.new(0, 0, 0, 0)
 end
 end
 end
