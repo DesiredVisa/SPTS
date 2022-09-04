@@ -1,0 +1,46 @@
+settings().Rendering.QualityLevel = 1
+local Terrain = game:GetService("Workspace").Terrain
+
+Terrain.WaterWaveSize = 0
+Terrain.WaterWaveSpeed = 0
+Terrain.WaterReflectance = 0
+Terrain.WaterTransparency = 0
+
+local Lighting = game:GetService("Lighting")
+
+Lighting.GlobalShadows = false
+Lighting.FogEnd = math.huge
+
+for i,v in pairs(game.Workspace.Town:GetDescendants()) do
+    if v:IsA("Part") or v:IsA("UnionOperation") or v:IsA("MeshPart") or v:IsA("TrussPart") or v:IsA("WedgePart") then
+        v.Material = "Plastic"
+        v.Reflectance = 0
+    elseif v:IsA("Decal") then
+        v.Transparency = 1
+    elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
+        v.Lifetime = NumberRange.new(0)
+    elseif v:IsA("Explosion") then
+        v.BlastPressure = 1
+        v.BlastRadius = 1
+    end
+end
+
+for i,v in pairs(game.Workspace.Main:GetDescendants()) do
+    if v:IsA("Part") or v:IsA("UnionOperation") or v:IsA("MeshPart") or v:IsA("TrussPart") or v:IsA("WedgePart") then
+        v.Material = "Plastic"
+        v.Reflectance = 0
+    elseif v:IsA("Decal") then
+        v.Transparency = 1
+    elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
+        v.Lifetime = NumberRange.new(0)
+    elseif v:IsA("Explosion") then
+        v.BlastPressure = 1
+        v.BlastRadius = 1
+    end
+end
+
+for i,v in pairs(Lighting:GetChildren()) do
+    if v:IsA("BloomEffect") or v:IsA("SunRaysEffect") then
+        v.Enabled = false
+    end
+end
