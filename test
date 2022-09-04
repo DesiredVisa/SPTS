@@ -1,0 +1,6 @@
+while true do
+task.wait()
+settings().Rendering.QualityLevel = 2
+task.wait(1)
+settings().Rendering.QualityLevel = 1
+end
