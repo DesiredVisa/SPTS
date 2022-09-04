@@ -46,8 +46,8 @@ for i,v in pairs(Lighting:GetChildren()) do
 end
 
 game:GetService("Lighting").Blur.Enabled = false
-game:GetService("Workspace").Main.TotalPowerLeaderBoardPart.LeaderBoardScript.Disabled = true
-game:GetService("Workspace").Main.FistStrengthLeaderBoardPart.LeaderBoardScript.Disabled = true
-game:GetService("Workspace").Main.BodyToughnessLeaderBoardPart.LeaderBoardScript.Disabled = true
-game:GetService("Workspace").Main.SuperHeroREPLeaderBoardPart.LeaderBoardScript.Disabled = true
-game:GetService("Workspace").Main.SuperVillainREPLeaderBoardPart.LeaderBoardScript.Disabled = true
+game:GetService("Workspace").Main.TotalPowerLeaderBoardPart.LeaderBoardScript:Destroy()
+game:GetService("Workspace").Main.FistStrengthLeaderBoardPart.LeaderBoardScript:Destroy()
+game:GetService("Workspace").Main.BodyToughnessLeaderBoardPart.LeaderBoardScript:Destroy()
+game:GetService("Workspace").Main.SuperHeroREPLeaderBoardPart.LeaderBoardScript:Destroy()
+game:GetService("Workspace").Main.SuperVillainREPLeaderBoardPart.LeaderBoardScript:Destroy()
