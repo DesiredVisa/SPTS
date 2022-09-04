@@ -44,3 +44,5 @@ for i,v in pairs(Lighting:GetChildren()) do
         v.Enabled = false
     end
 end
+
+game:GetService("Lighting").Blur.Enabled = false
