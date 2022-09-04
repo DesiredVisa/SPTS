@@ -1,9 +1,18 @@
 while true do
 task.wait()
-for _, snowball in pairs(game.Workspace.Storage:GetChildren()) do
-    if snowball.Name == "EnergySphere9" then
-      snowball.Transparency = 0
-      snowball.Color = Color3.fromRGB(33, 33, 33)
+for _, v in pairs(game.Workspace.Storage:GetChildren()) do
+    if v.Name == "EnergySphere9" then
+      v.Transparency = 0
+      v.Color = Color3.fromRGB(33, 33, 33)
+    end
+    end
+end
+while true do
+task.wait()
+for _, v in pairs(game.Workspace:GetChildren()) do
+    if v.Name == "Part" then
+      v.Transparency = 0
+      v.Color = Color3.fromRGB(255, 255, 255)
     end
     end
 end
