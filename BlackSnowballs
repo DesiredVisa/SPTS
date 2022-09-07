@@ -7,12 +7,5 @@ for _, v in pairs(game.Workspace.Storage:GetChildren()) do
     end
     end
 end
-while true do
-task.wait()
-for _, v in pairs(game.Workspace:GetChildren()) do
-    if v.Name == "Part" then
-      v.Transparency = 0
-      v.Color = Color3.fromRGB(255, 255, 255)
-    end
-    end
-end
+
+
