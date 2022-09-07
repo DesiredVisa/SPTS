@@ -1,5 +1,0 @@
-while true do
-for _, child in pairs(game.Workspace:GetChildren()) do
-    child:Destroy()
-end
-end
