@@ -294,7 +294,7 @@ function UILibrary.Load(GUITitle)
 		
 		local PageButton = TextButton(PageTitle, 14)
 		PageButton.Name = PageTitle.."Button"
-		PageButton.TextTransparency = (TabCount == 0) and 0 or 0.5
+		PageButton.TextTransparency = (TabCount == 0) and 1
 		PageButton.Parent = PageContainer
 		
 		PageButton.MouseButton1Down:Connect(function()
@@ -303,7 +303,7 @@ function UILibrary.Load(GUITitle)
 					if Button:IsA("GuiObject") then
 						local IsButton = string.find(Button.Name:lower(), PageContainer.Name:lower())
 						local Button2 = Button:FindFirstChild(Button.Name.."Button")
-						Tween(Button2, {TextTransparency = IsButton and 0 or 0.5})
+						Tween(Button2, {TextTransparency = IsButton and 1 or 1})
 					end
 				end
 			end)
