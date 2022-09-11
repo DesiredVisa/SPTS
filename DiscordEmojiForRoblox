@@ -1,0 +1,41 @@
+local emojis = game:GetService("HttpService"):JSONDecode(game:HttpGet("https://raw.githubusercontent.com/DesiredVisa/SPTS/main/emojilist", true))
+local chatbar = nil
+local function emojiparse(msg)
+    local colons = {}
+    local lastcolon = 0
+    local thingstoreplace = {}
+    repeat
+        local currentcolon = string.find(msg, ":", lastcolon + 1)
+        if currentcolon ~= nil then
+            table.insert(colons, currentcolon)
+            lastcolon = currentcolon
+        else
+            lastcolon = currentcolon
+        end
+    until lastcolon == nil
+    for i = 1,#colons do
+        if i ~= 1 then
+            if emojis[string.sub(string.lower(msg), colons[i - 1] + 1, colons[i] - 1)] ~= nil then
+                thingstoreplace[string.sub(msg, colons[i - 1], colons[i])] = emojis[string.sub(string.lower(msg), colons[i - 1] + 1, colons[i] - 1)]
+            end
+        end
+    end
+    for i,v in pairs(thingstoreplace) do
+        msg = string.gsub(msg,i,v)
+    end
+    return msg
+end
+
+local meta = getrawmetatable(game)
+local namecall = meta.__namecall
+setreadonly(meta,false)
+
+meta.__namecall=function(self,...)
+    local Args={...}
+    local method = getnamecallmethod()
+    if method == "FireServer" and self == game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest then
+        Args[1] = emojiparse(Args[1])
+        return namecall(self,unpack(Args))
+    end
+    return namecall(self,...)
+end
