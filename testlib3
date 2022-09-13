@@ -228,7 +228,7 @@ function UILibrary.Load(GUITitle)
 	Level += 1
 	
 	local MinimiseButton, TitleButton
-	local MinimiseToggle = false
+	local MinimiseToggle = true
 	
 	MinimiseButton = TitleIcon(true)
 	MinimiseButton.Name = "Minimise"
