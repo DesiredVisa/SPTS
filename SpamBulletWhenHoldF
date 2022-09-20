@@ -10,7 +10,7 @@ local function Input(input, gameProcessedEvent)
 	if not IsBulletKeyDown() then
 	else
 while IsBulletKeyDown() do
-task.wait()
+task.wait(0.27)
 local Player = game.Players.LocalPlayer
 local Mouse = Player:GetMouse()
 local MouseCFrame = Mouse.Hit
@@ -21,6 +21,18 @@ local MousePosition = MouseCFrame.p
                 [1] = {
                     [1] = "Skill_BulletPunch",
                     [2] = "Left",
+                    [3] = MousePosition
+                }
+            }
+    
+            Remote:FireServer(unpack(Arguments))
+task.wait(0.27)
+		            local Remote = game.ReplicatedStorage['RemoteEvent']
+    
+            local Arguments = {
+                [1] = {
+                    [1] = "Skill_BulletPunch",
+                    [2] = "Right",
                     [3] = MousePosition
                 }
             }
