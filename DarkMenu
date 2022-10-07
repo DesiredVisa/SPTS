@@ -1,3 +1,9 @@
+if not game:IsLoaded() then
+    game.Loaded:Wait()
+end
+
+if game.PlaceId ~= 2202352383 then return end
+
 if game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.MenuFrame:FindFirstChild('LootBoxBtn') then
 game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.MenuFrame.LootBoxBtn:Destroy()
 end
@@ -61,3 +67,12 @@ game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.MenuFrame.SettingFram
 game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.MenuFrame.SettingFrame.SettingTxt0.TextColor3 = Color3.new(74, 195, 68)
 game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.MenuFrame.InfoFrame.GuideImg.Visible = false
 game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.MenuFrame.InfoFrame.GuideTxt.Visible = false
+if game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.MenuBtn then
+    game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.MenuBtn.BorderColor3 = Color3.fromRGB(0,0,0)
+    game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.MenuBtn.TextColor3 = Color3.fromRGB(0,0,0)
+end
+if game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.CurrentGemImgBtn.AmountTxtBtn then
+    game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.CurrentGemImgBtn.AmountTxtBtn.TextColor3 = Color3.fromRGB(33,33,33)
+    game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.CurrentGemImgBtn.AmountTxtBtn.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+    game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.CurrentGemImgBtn.ImageColor3 = Color3.fromRGB(0, 0, 0)
+end
